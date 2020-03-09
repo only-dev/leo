@@ -1,0 +1,42 @@
+{
+    "name": "laravel-zoroaster/zoroaster",
+    "description": "A wonderful administration interface for Laravel.",
+    "keywords": [
+        "laravel",
+        "admin"
+    ],
+    "authors": [
+        {
+            "name": "Karim Qaderi",
+            "email": "karimqaderi1@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "illuminate/support": "^5.7.15 | 5.8.* | ^6.0",
+        "symfony/finder": "^4.0"
+    },
+    "autoload": {
+        "files": [
+            "src/Helpers/helpers.php"
+        ],
+        "psr-4": {
+            "LaravelZoroaster\\Zoroaster\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelZoroaster\\Zoroaster\\ZoroasterCoreServiceProvider"
+            ],
+            "aliases": {
+                "Zoroaster": "LaravelZoroaster\\Zoroaster\\Zoroaster"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
